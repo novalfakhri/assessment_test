@@ -22,6 +22,8 @@ public class InputActivity extends AppCompatActivity {
         final EditText namaBarang = (EditText) findViewById(R.id.edit_nama);
         final EditText jumlahBarang = (EditText) findViewById(R.id.edit_jumlah);
         final EditText hargaBarang = (EditText) findViewById(R.id.edit_harga);
+        final EditText pemasok = (EditText) findViewById(R.id.edit_pemasok);
+        final EditText keterangan = (EditText) findViewById(R.id.edit_keterangan);
         input.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -35,7 +37,7 @@ public class InputActivity extends AppCompatActivity {
                     Toast.makeText(InputActivity.this, "Form tidak boleh kosong", Toast.LENGTH_LONG).show();
                 } else {
                     Intent intent = new Intent(InputActivity.this, StokActivity.class);
-                    StokBarang stok = new StokBarang(tanggal.getText().toString(), namaBarang.getText().toString(), jumlahBarang.getText().toString(), hargaBarang.getText().toString());
+                    StokBarang stok = new StokBarang(tanggal.getText().toString(), namaBarang.getText().toString(), jumlahBarang.getText().toString(), hargaBarang.getText().toString(), pemasok.getText().toString(), keterangan.getText().toString());
                     Bundle bundle = new Bundle();
                     bundle.putSerializable("data", stok);
                     intent.putExtras(bundle);

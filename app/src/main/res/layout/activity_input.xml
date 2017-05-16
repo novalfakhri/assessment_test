@@ -110,6 +110,7 @@
             android:textSize="18sp" />
 
         <EditText
+            android:id="@+id/edit_pemasok"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp" />
@@ -128,6 +129,7 @@
             android:textSize="18sp" />
 
         <EditText
+            android:id="@+id/edit_keterangan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp" />
@@ -139,6 +141,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
-        android:text="Tambahkan"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:text="Tambahkan" />
 </LinearLayout>
