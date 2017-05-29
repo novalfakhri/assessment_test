@@ -5,28 +5,25 @@
     android:layout_margin="20dp"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/display_nama"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textStyle="bold" />
-
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <TextView
+            android:id="@+id/display_nama"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Stok:" />
+            android:layout_weight="1" />
 
         <TextView
-            android:id="@+id/display_stok"
+            android:id="@+id/display_tanggal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp" />
+            android:layout_gravity="right"
+            android:textStyle="bold" />
     </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -40,6 +37,23 @@
 
         <TextView
             android:id="@+id/display_harga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stok:" />
+
+        <TextView
+            android:id="@+id/display_stok"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp" />

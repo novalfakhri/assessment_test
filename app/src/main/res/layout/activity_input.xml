@@ -66,11 +66,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Jumlah            :"
+            android:text="Harga              :"
             android:textSize="18sp" />
 
         <EditText
-            android:id="@+id/edit_jumlah"
+            android:id="@+id/edit_harga"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -86,11 +86,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Harga              :"
+            android:text="Jumlah            :"
             android:textSize="18sp" />
 
         <EditText
-            android:id="@+id/edit_harga"
+            android:id="@+id/edit_jumlah"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -117,30 +117,57 @@
 
     </LinearLayout>
 
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Keterangan     :"-->
+            <!--android:textSize="18sp" />-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/edit_keterangan"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp" />-->
+
+    <!--</LinearLayout>-->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal">
 
-        <TextView
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Keterangan     :"
-            android:textSize="18sp" />
+            android:id="@+id/button_layout">
 
-        <EditText
-            android:id="@+id/edit_keterangan"
-            android:layout_width="match_parent"
+            <Button
+                android:id="@+id/button_hapus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Hapus" />
+
+            <Button
+                android:id="@+id/button_ubah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ubah" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_simpan"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp" />
-
+            android:layout_weight="1"
+            android:text="Simpan" />
     </LinearLayout>
 
-    <Button
-        android:id="@+id/button_input"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:layout_marginTop="10dp"
-        android:text="Tambahkan" />
 </LinearLayout>

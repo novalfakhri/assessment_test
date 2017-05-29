@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">My Inventory</string>
+    <string name="iya">Oke</string>
+    <string name="tidak">Tidak</string>
 </resources>
